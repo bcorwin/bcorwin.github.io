@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+  Hyperspace by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Benjamin Scott Corwin - Wiki Web</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    <!-- Header -->
+      <header id="header">
+        <a href="../index.html" class="title">Benjamin Scott Corwin</a>
+        <nav>
+          <ul>
+            <li><a href="javascript:history.back()">Back</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Main -->
+          <section id="main" class="wrapper">
+            <div class="inner">
+              <!-- EDIT BELOW -->
+              <h1 class="major">Wiki Web</h1>
+              <ul class="actions fit">
+                <li><a href="https://github.com/bcorwin/wiki_web" class="button primary fit">Source code</a></li>
+              </ul>
+              <span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+              
+              <h2>Exploring Wikipedia's Link Structure</h2>
+              <p>Wiki Web is a fascinating project that combines web scraping, data analysis,
+                and network visualization to explore the interconnected nature of Wikipedia articles.
+                Inspired by the <a href="https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy">"Getting to Philosophy"</a> phenomenon,
+                this project aims to uncover patterns in how Wikipedia pages link to each other.</p>
+              <h2>Project Overview</h2>
+              <p>The core concept of Wiki Web is simple yet intriguing:</p>
+              <ol>
+                <li>Start with a random Wikipedia page</li>
+                <li>Click the first valid link in the main body of the article (see Getting to Philosophy for what defines a valid link)</li>
+                <li>Repeat step 2 until reaching a page that has already been visited</li>
+              </ol>
+              <p>This process creates a chain of linked articles, potentially revealing interesting patterns in Wikipedia's knowledge structure.</p>
+
+              <h2>Technical Implementation</h2>
+              <p>The project is implemented in Python, leveraging two powerful libraries:</p>
+              <ul>
+                <li><b>Beautiful Soup:</b> Used for parsing HTML and extracting relevant links from Wikipedia pages</li>
+                <li><b>NetworkX:</b> Employed to create and analyze the graph structure of linked pages</li>
+              </ul>
+
+              <h2>Challenges and Solutions</h2>
+              <p>One of the most significant challenges in implementing Wiki Web was excluding links within parentheses.
+                This required developing a custom algorithm to match parentheses and determine if a link is enclosed.
+                While the algorithm occasionally fails due to typos in Wikipedia articles (e.g., missing closing parentheses),
+                the error rate is less than 1%, which was deemed acceptable for the current version of the project.</p>
+
+                <h2>Data Extraction as a Puzzle</h2>
+                <p>As a software engineer, I view data extraction tasks, including web scraping, as puzzles to be solved.
+                  Each website presents unique challenges in terms of structure, dynamic content, and anti-scraping measures.
+                  Developing Wiki Web has been an excellent opportunity to hone my skills in this area,
+                  approaching each obstacle as a new puzzle piece to fit into place.</p>
+
+                  <h2>Future Enhancements</h2>
+                  <p>While the README already contains an initial analysis, there's potential for more in-depth exploration:</p>
+                  <ul>
+                    <li><b>Advanced Visualizations:</b> Implementing interactive network graphs using tools like PyVis to better illustrate the connections between articles</li>
+                    <li><b>Centrality Analysis:</b> Utilizing NetworkX's centrality algorithms to identify the any other (non-Philosophy) "important" pages in the network</li>
+                    <li><b>Topic Clustering:</b> Applying natural language processing techniques to group related articles and visualize topic clusters and see if their centrality differs.</li>
+                  </ul>
+
+                  Conclusion
+                  Wiki Web demonstrates the power of combining web scraping techniques with network analysis to uncover insights about the structure of online knowledge. As the project evolves, it has the potential to reveal fascinating patterns in how information is interconnected on one of the world's largest collaborative knowledge bases. By working on Wiki Web, I've not only improved my web scraping and data analysis skills but also gained a deeper appreciation for the complex structure of Wikipedia. This project serves as a testament to the value of personal coding projects in developing practical skills for a career in software engineering.
+
+              <!-- EDIT ABOVE -->
+              <ul class="actions">
+                <li><a href="../index.html#projects" class="button fit">More projects</a></li>
+              </ul>
+              
+            </div>
+          </section>
+
+      </div>
+
+    <!-- Footer -->
+      <footer id="footer" class="wrapper alt">
+        <div class="inner">
+          <ul class="menu">
+            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
