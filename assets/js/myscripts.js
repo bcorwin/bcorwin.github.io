@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('a')
   links.forEach(link => {
-    if (link.href.includes('http') | link.href.includes('mailto:')) {
+    if (
+        (link.href.includes('http') & !link.href.includes('bcor.win')) |
+        link.href.includes('mailto:')
+    ) {
       link.setAttribute('target', '_blank')
     }
   })
