@@ -177,9 +177,15 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: bold;
+    text-transform: uppercase;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
+
+  .title {
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
